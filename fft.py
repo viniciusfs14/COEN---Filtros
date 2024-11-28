@@ -2,9 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import librosa
 import librosa.display
-from scipy.signal import iirfilter, sosfilt
 from scipy.fft import fft, fftfreq
-import soundfile as sf
+
 
 filename = 'audio_ruido.mp3'
 x, fs = librosa.load(filename, sr=44100)  # sr=None para manter a taxa de amostragem original
